@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Lema - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="src/logo.png" alt="Logo personal de Michael Lema">
+    </div>
+    <nav class="menu">
+      <button class="hamburger" aria-label="Abrir menú de navegación">☰</button>
+      <ul class="nav-links">
+        <li><a href="#info">INFO</a></li>
+        <li><a href="#trabajos">TRABAJOS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
+      <button id="toggle-theme" aria-label="Cambiar tema">🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="presentacion">
+      <p class="intro">Hola, soy</p>
+      <p class="nombre" data-text="Michael&nbsp;Lema">Michael&nbsp;Lema</p>
+      <p class="subtitulo"><span class="nowrap">D I S E Ñ A D O R &nbsp; G R Á F I C O &nbsp; Y &nbsp; A R T I S T A &nbsp; M U L T I M E D I A L</span></p>
+    </section>
+
+    <section id="info" class="info">
+      <h2>INFO</h2>
+      <p>Convierte tus ideas en piezas visuales claras, creativas y funcionales, con un gran impacto visual.</p>
+    </section>
+
+    <section id="trabajos" class="galeria">
+      <h2>TRABAJOS</h2>
+      <div class="grid-trabajos">
+        <div class="trabajo"><img src="src/img1.png" alt="Trabajo 1"><div class="info-hover">Identidad visual para marca IMPA</div></div>
+        <div class="trabajo"><img src="src/img2.png" alt="Trabajo 2"><div class="info-hover">Diseño editorial - Guía en Barrio la Boca</div></div>
+        <div class="trabajo"><img src="src/img3.png" alt="Trabajo 3"><div class="info-hover">Campaña gráfica para Centro cultural IMPA</div></div>
+        <div class="trabajo"><img src="src/img4.png" alt="Trabajo 4"><div class="info-hover">Afiches tipográficos Univers</div></div>
+        <div class="trabajo"><img src="src/img5.png" alt="Trabajo 5"><div class="info-hover">Afiche Ilustrativo - MitoZoo</div></div>
+        <div class="trabajo"><img src="src/img6.png" alt="Trabajo 6"><div class="info-hover">Afiche Tipográfico - Geometrica Font</div></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>CONTACTO</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="E-mail" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">ENVIAR</button>
+      </form>
+      <div class="redes">
+        <a href="https://www.behance.net/michaellema" target="_blank" rel="noopener noreferrer">
+          <img src="src/behance-light.png" alt="Behance" class="icono-red" data-light="src/behance-icon_dark.png" data-dark="src/behance-icon.png">
+        </a>
+        <a href="https://www.instagram.com/gd_mlema/" target="_blank" rel="noopener noreferrer">
+          <img src="src/instagram-light.png" alt="Instagram" class="icono-red" data-light="src/logo_v2_ig_dark.png" data-dark="src/logo_v2_ig.png">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <img src="src/facebook-light.png" alt="Facebook" class="icono-red" data-light="src/facebook-icon_dark.png" data-dark="src/facebook-icon.png">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
