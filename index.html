@@ -4,35 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michael Lema - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="src/logo.png">  
 </head>
 <body>
+  
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
   <header>
     <div class="logo">
-      <img src="src/logo.png" alt="Logo personal de Michael Lema">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.37 173.75" class="logo-svg">
+        <rect class="logo-bg" width="165.37" height="173.75" fill="#5e1d35"/>
+        <path class="logo-m" d="M105.93,143.71h1.85v.94h-5.27v-.94h2.11v-47.96c-.18-1.56-.26-3.06-.26-4.47,0-1.25-.05-2.43-.13-3.53-.09-1.09-.13-1.8-.13-2.12-.35-3.29-.92-7.01-1.71-11.17-.79-4.15-1.71-8.42-2.77-12.81-1.05-4.39-2.11-8.62-3.16-12.7-1.05-4.07-1.94-7.76-2.64-11.05-.18-.62-.31-1.25-.39-1.88-.09-.62-.31-1.25-.66-1.88v109.56h2.11v.94h-5.54v-.94h2.11v-47.96c-.18-1.56-.26-3.06-.26-4.47v-5.64c-.35-3.29-.92-7.01-1.71-11.17-.79-4.15-1.71-8.42-2.77-12.81-1.05-4.39-2.11-8.62-3.16-12.7-1.05-4.07-1.94-7.76-2.64-11.05-.18-.62-.35-1.29-.53-2-.18-.71-.35-1.37-.53-2v109.8h1.85v.94h-12.92v-.94h2.11V35.56c0-.31.13-1.06.4-2.23.26-1.18,1.27-2.39,3.03-3.64.53-.31,1.1-.55,1.71-.71.61-.15,1.19-.31,1.71-.47.7-.15,1.4-.24,2.11-.24l.53,2.35c.17.63.35,1.29.53,2,.17.71.35,1.22.53,1.53.7,2.82,1.49,6,2.37,9.52.88,3.53,1.8,7.21,2.77,11.05.96,3.84,1.89,7.72,2.77,11.64.88,3.92,1.58,7.6,2.11,11.05V28.27h1.32c.17.16.44.98.79,2.47.35,1.49.7,2.63,1.05,3.41.7,3.29,1.67,7.21,2.9,11.76,1.23,4.55,2.37,9.17,3.43,13.87s2.02,9.37,2.9,13.99c.88,4.62,1.49,8.66,1.84,12.11,0,.47.04,1.22.13,2.23.09,1.02.13,2.16.13,3.41v52.19ZM74.3,32.74c-.7.94-1.05,1.65-1.05,2.12-.18.47-.18.79,0,.94v107.92h1.05V32.74ZM77.73,30.63c-.35,0-.7.16-1.05.47v112.62h1.05V30.63Z"/>
+      </svg>
     </div>
+
     <nav class="menu">
-      <button class="hamburger" aria-label="Abrir menú de navegación">☰</button>
+      <button class="hamburger" aria-label="Abrir menú">☰</button>
       <ul class="nav-links">
-        <li><a href="#info">INFO</a></li>
+        <li><a href="#sobre-mi">SOBRE MÍ</a></li>
         <li><a href="#trabajos">TRABAJOS</a></li>
         <li><a href="#contacto">CONTACTO</a></li>
+        
+        <li class="theme-li">
+          <button id="toggle-theme" aria-label="Cambiar tema" class="theme-btn">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+        </li>
       </ul>
-      <button id="toggle-theme" aria-label="Cambiar tema">🌓</button>
     </nav>
   </header>
 
   <main>
     <section class="presentacion">
-      <p class="intro">Hola, soy</p>
-      <p class="nombre" data-text="Michael&nbsp;Lema">Michael&nbsp;Lema</p>
-      <p class="subtitulo"><span class="nowrap">D I S E Ñ A D O R &nbsp; G R Á F I C O &nbsp; Y &nbsp; A R T I S T A &nbsp; M U L T I M E D I A L</span></p>
+      <div class="contenido-texto">
+        <p class="intro">Hola, soy</p>
+        <h1 class="nombre">
+          <span class="palabra">MICHAEL</span>
+          <span class="palabra">LEMA</span>
+        </h1>
+        <p class="subtitulo">DISEÑADOR GRÁFICO & ARTISTA MULTIMEDIAL</p>
+      </div>
+      
+      <div class="contenedor-foto">
+        <img src="src/mifoto.png" alt="Michael Lema" class="foto-perfil">
+      </div>
     </section>
 
-    <section id="info" class="info">
-      <h2>INFO</h2>
-      <p>Convierte tus ideas en piezas visuales claras, creativas y funcionales, con un gran impacto visual.</p>
+    <section id="sobre-mi" class="info">
+      <h2>SOBRE MÍ</h2>
+      <p>
+        Más que diseñar, construyo narrativas visuales. Soy artista multimedial y diseñador gráfico enfocado en la fusión entre estrategia y estética. Transformo ideas abstractas en identidades tangibles y experiencias digitales que no solo se ven bien, sino que comunican, emocionan y perduran.
+      </p>
     </section>
 
     <section id="trabajos" class="galeria">
@@ -44,6 +74,27 @@
         <div class="trabajo"><img src="src/img4.png" alt="Trabajo 4"><div class="info-hover">Afiches tipográficos Univers</div></div>
         <div class="trabajo"><img src="src/img5.png" alt="Trabajo 5"><div class="info-hover">Afiche Ilustrativo - MitoZoo</div></div>
         <div class="trabajo"><img src="src/img6.png" alt="Trabajo 6"><div class="info-hover">Afiche Tipográfico - Geometrica Font</div></div>
+
+        <div class="trabajo iframe-container">
+             <iframe 
+                src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=znieuuh6rh" 
+                width="100%" 
+                height="100%" 
+                seamless="seamless" 
+                scrolling="no" 
+                frameBorder="0" 
+                allowFullScreen 
+                allow="autoplay; clipboard-read; clipboard-write"
+                style="display: block; width: 100%; height: 100%; min-height: 400px;">
+            </iframe>
+            <div class="info-hover">Catálogo Interactivo</div>
+        </div>
+
+        <div class="trabajo"><img src="src/img8.png" alt="Trabajo 8"><div class="info-hover">Branding Corporativo</div></div>
+        <div class="trabajo"><img src="src/img9.png" alt="Trabajo 9"><div class="info-hover">Ilustración Digital</div></div>
+        <div class="trabajo"><img src="src/img10.jpg" alt="Trabajo 10"><div class="info-hover">Diseño Web UI/UX</div></div>
+        <div class="trabajo"><img src="src/img11.jpg" alt="Trabajo 11"><div class="info-hover">Fotografía Artística</div></div>
+        <div class="trabajo"><img src="src/img12.jpg" alt="Trabajo 12"><div class="info-hover">Motion Graphics</div></div>
       </div>
     </section>
 
@@ -55,19 +106,25 @@
         <textarea placeholder="Mensaje" required></textarea>
         <button type="submit">ENVIAR</button>
       </form>
+      
       <div class="redes">
         <a href="https://www.behance.net/michaellema" target="_blank" rel="noopener noreferrer">
-          <img src="src/behance-light.png" alt="Behance" class="icono-red" data-light="src/behance-icon_dark.png" data-dark="src/behance-icon.png">
+          <img src="src/behance-icon_dark.png" alt="Behance" class="icono-red">
         </a>
         <a href="https://www.instagram.com/gd_mlema/" target="_blank" rel="noopener noreferrer">
-          <img src="src/instagram-light.png" alt="Instagram" class="icono-red" data-light="src/logo_v2_ig_dark.png" data-dark="src/logo_v2_ig.png">
+          <img src="src/logo_v2_ig_dark.png" alt="Instagram" class="icono-red">
         </a>
         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-          <img src="src/facebook-light.png" alt="Facebook" class="icono-red" data-light="src/facebook-icon_dark.png" data-dark="src/facebook-icon.png">
+          <img src="src/facebook-icon_dark.png" alt="Facebook" class="icono-red">
         </a>
       </div>
     </section>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 
   <script src="script.js"></script>
 </body>
