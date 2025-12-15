@@ -14,6 +14,7 @@
 </head>
 <body>
   
+  <!-- Ojo con este recurso en mobile -->
   <div class="cursor-dot"></div>
   <div class="cursor-outline"></div>
 
@@ -26,11 +27,13 @@
     </div>
 
     <nav class="menu">
+      <!-- Bien el aria-label -->
       <button class="hamburger" aria-label="Abrir menú">☰</button>
       <ul class="nav-links">
-        <li><a href="#sobre-mi">SOBRE MÍ</a></li>
-        <li><a href="#trabajos">TRABAJOS</a></li>
-        <li><a href="#contacto">CONTACTO</a></li>
+        <!-- Evitar el uso de mayúsculas, se puede lograr con CSS (text-transform: uppercase) -->
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#trabajos">Trabajos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
         
         <li class="theme-li">
           <button id="toggle-theme" aria-label="Cambiar tema" class="theme-btn">
@@ -46,11 +49,12 @@
     <section class="presentacion">
       <div class="contenido-texto">
         <p class="intro">Hola, soy</p>
+        <!-- Acá también evitar mayúsculas -->
         <h1 class="nombre">
-          <span class="palabra">MICHAEL</span>
-          <span class="palabra">LEMA</span>
+          <span class="palabra">Michael</span>
+          <span class="palabra">Lema</span>
         </h1>
-        <p class="subtitulo">DISEÑADOR GRÁFICO & ARTISTA MULTIMEDIAL</p>
+        <p class="subtitulo">Diseñador gráfico & artista multimedial</p>
       </div>
       
       <div class="contenedor-foto">
@@ -68,6 +72,7 @@
     <section id="trabajos" class="galeria">
       <h2>TRABAJOS</h2>
       <div class="grid-trabajos">
+        <!-- Sería bueno usar ALT descriptivos de las imágenes -->
         <div class="trabajo"><img src="src/img1.png" alt="Trabajo 1"><div class="info-hover">Identidad visual para marca IMPA</div></div>
         <div class="trabajo"><img src="src/img2.png" alt="Trabajo 2"><div class="info-hover">Diseño editorial - Guía en Barrio la Boca</div></div>
         <div class="trabajo"><img src="src/img3.png" alt="Trabajo 3"><div class="info-hover">Campaña gráfica para Centro cultural IMPA</div></div>
