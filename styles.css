@@ -34,6 +34,13 @@ body {
   transition: width 0.2s, height 0.2s, background-color 0.2s, border-color 0.3s;
 }
 
+/* Sería bueno agregar un media-query para ocultar el cursor en dispositivos touch */
+@media (hover: none) and (pointer: coarse) {
+  .cursor-dot, .cursor-outline {
+    display: none;
+  }
+}
+
 /* HEADER */
 header {
   display: flex;
@@ -99,7 +106,8 @@ header {
   .palabra { font-size: clamp(5rem, 9vw, 9rem); }
 }
 
-.subtitulo { font-size: 1.2rem; letter-spacing: 3px; text-transform: uppercase; margin-top: 1rem; opacity: 0.8; line-height: 1.5; }
+/* Mejor usar letter spacing en rem para que se mantenga proporcional al tamaño de fuente */
+.subtitulo { font-size: 1.2rem; letter-spacing: 0.1875rem; text-transform: uppercase; margin-top: 1rem; opacity: 0.8; line-height: 1.5; }
 
 .foto-perfil {
   width: 280px; height: 380px; object-fit: cover; border-radius: 100px; filter: grayscale(100%);
